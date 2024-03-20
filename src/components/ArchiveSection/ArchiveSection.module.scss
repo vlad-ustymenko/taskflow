@@ -1,0 +1,15 @@
+.archive {
+  background-color: #f4f4f4;
+  &_section {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    height: 100%;
+    min-width: 200px;
+  }
+  &_title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+}

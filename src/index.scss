@@ -1,0 +1,39 @@
+@import './veriables.scss';
+body {
+  position: relative;
+  margin: 0;
+  //font-family: 'Outfit', sans-serif;
+  font-family: 'Kurale', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $bgColor;
+}
+.active {
+  overflow: hidden;
+}
+
+code {
+  // font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#root {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border: 2px white solid;
+  border-radius: 8px;
+}

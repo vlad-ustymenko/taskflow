@@ -1,0 +1,53 @@
+.menu {
+  background-color: #f4f4f4;
+  &_section {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    height: 100%;
+    min-width: 200px;
+  }
+  &_title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  &_item_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.badge {
+  margin-right: 1px;
+  color: black;
+}
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.inputTitle {
+  width: 100px;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+:global {
+  .ant-wave {
+    color: black;
+  }
+  .ant-picker-header-view {
+    display: flex !important;
+    justify-content: space-between;
+  }
+  .ant-picker-panel-container .ant-picker-date-panel-container {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+  .ant-space-item {
+    width: 100% !important;
+  }
+}

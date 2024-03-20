@@ -1,0 +1,54 @@
+@import '../../veriables.scss';
+.checkbox {
+  appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px gray solid;
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 5px;
+      width: 6px;
+      height: 10px;
+      border: 2px solid transparent;
+      border-bottom-color: lightgrey;
+      border-right-color: lightgrey;
+      transform-origin: 50% 50%;
+      transform: rotate(35deg);
+    }
+  }
+  &:checked {
+    background-color: $accentColor;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 5px;
+      width: 6px;
+      height: 10px;
+      border: 2px solid transparent;
+      border-bottom-color: gray;
+      border-right-color: gray;
+      transform-origin: 50% 50%;
+      transform: rotate(35deg);
+    }
+  }
+  &__wrapper {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 auto;
+  }
+}

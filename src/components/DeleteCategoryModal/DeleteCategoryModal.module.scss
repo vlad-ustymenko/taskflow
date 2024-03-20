@@ -1,0 +1,70 @@
+@import '../../veriables.scss';
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100svh;
+  font-size: 1.3rem;
+  z-index: 4;
+  transform: scale(0);
+  &__BG {
+    width: 100%;
+    height: 100%;
+    background: rgba(79, 79, 79, 0.8);
+    opacity: 0;
+    transition: 0.3s;
+  }
+  &__title {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    white-space: pre-line;
+    word-break: break-word;
+  }
+  &__text {
+    text-align: center;
+    white-space: pre-line;
+    word-break: break-word;
+    span {
+      font-weight: 700;
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    transition: 0.3s;
+
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
+  }
+  &__buttonsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+.activeModal {
+  transform: scale(1);
+}
+.activeBG {
+  opacity: 1;
+}
+.activeContent {
+  transform: translate(-50%, -50%) scale(1);
+}

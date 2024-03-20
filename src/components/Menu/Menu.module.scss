@@ -1,0 +1,94 @@
+@import '../../veriables.scss';
+
+.menu {
+  width: 100%;
+  padding: 15px;
+  background-color: $bgAccent;
+  height: 100%;
+  overflow-y: auto;
+  @media (min-width: 1024px) {
+    max-width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+  }
+
+  &__block {
+    font-weight: 600;
+    font-size: 1.2rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__listWrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.5s ease-in-out;
+    &.open {
+      grid-template-rows: 1fr;
+    }
+  }
+
+  &__list {
+    overflow: hidden;
+    padding: 0 20px 0 20px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & li {
+      margin: 5px 0;
+      font-size: 1.5rem;
+      font-weight: normal;
+      color: black;
+      line-height: 1.2;
+      &:active {
+        color: black;
+      }
+    }
+  }
+  &__linkCategory {
+    & li {
+      width: calc(100vw - 100px);
+      white-space: wrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      @media (min-width: 1024px) {
+        width: 180px;
+      }
+    }
+  }
+  &__titleWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-bottom: 10px;
+    transition: 0.5s ease-in-out;
+
+    &.close {
+      padding-bottom: 0;
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__badge {
+    background-color: white;
+    padding: 2px 15px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
