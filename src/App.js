@@ -19,7 +19,7 @@ const App = () => {
       <div className="App">
         <Routes>
           <Route path="/" element={<Navigate to="/today" />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Main category="Today" />} />
           <Route path="upcoming" element={<Main category="Upcoming" />} />
           <Route path="today" element={<Main category="Today" />} />
           <Route path="overdue" element={<Main category="Overdeu" />} />

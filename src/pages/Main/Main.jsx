@@ -81,7 +81,7 @@ const Main = ({ category }) => {
               <div
                 className={styles.noTaskImg}
                 style={{
-                  background: `url("/img/${noTaskImage}") center / contain no-repeat`,
+                  background: `url("./img/${noTaskImage}") center / contain no-repeat`,
                 }}
               ></div>
               <div className={styles.noTaskText}>{noTaskText}</div>
