@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/taskflow/static/css/main.678f6132.css",
+    "main.js": "/taskflow/static/js/main.bff34c6c.js",
+    "static/media/notFound.webp": "/taskflow/static/media/notFound.ed06b9ae12a9f33a3b10.webp",
+    "index.html": "/taskflow/index.html",
+    "main.678f6132.css.map": "/taskflow/static/css/main.678f6132.css.map",
+    "main.bff34c6c.js.map": "/taskflow/static/js/main.bff34c6c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.678f6132.css",
+    "static/js/main.bff34c6c.js"
+  ]
+}
